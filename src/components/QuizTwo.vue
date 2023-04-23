@@ -3,32 +3,47 @@
 export default {
   data() {
     return {
-      title: "Jessica's weekend",
-      questions: [
+        title: "Olivia's restaurant",
+        questions: [
         {
-          text: "How was Jessica's weekend?",
-          options: ["Boring", "Great", "Fantastic"],
-          answerIndex: 1,
-        },
-        {
-          text: "What did she do?",
-          options: ["She went snorkeling", "She went hiking", "She went biking"],
+          text: "What kind of restaurant did Olivia visit?",
+          options: ["Mexican", "Italian", "Spanish"],
           answerIndex: 2,
         },
         {
-          text: "Who did she go with?",
-          options: ["With Gina", "With Tina", "With her boss"],
+          text: "The restaurant serves _____",
+          options: ["seafood", "pasta", "ice cream"],
           answerIndex: 0,
         },
         {
-          text: "What did Ben do?",
-          options: ["He had a party", "He had a meeting", "He was exhausted"],
+          text: "Olivia had ______",
+          options: ["a rice dish", "seafood soup", "fast food"],
           answerIndex: 0,
         },
         {
-          text: "Ben has a ________ today",
-          options: ["date", "meeting", "party"],
+          text: "The restaurant doesn't serve food for vegetarians",
+          options: ["True", "False", "They don't say"],
           answerIndex: 1,
+        },
+        {
+          text: "The service was _____",
+          options: ["terrible", "fast", "slow"],
+          answerIndex: 2,
+        },
+        {
+          text: "The atmosphere was _____",
+          options: ["terrible", "relaxed", "fun"],
+          answerIndex: 2,
+        },
+        {
+          text: "The food was _____",
+          options: ["expensive", "cheap", "bad"],
+          answerIndex: 0,
+        },
+        {
+          text: "Olivia liked the restaurant",
+          options: ["true", "false", "they don't say"],
+          answerIndex: 0,
         },
       ],
       selectedOptions: new Array(this.numberOfQuestions).fill(null),
@@ -71,7 +86,7 @@ export default {
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <audio controls src="https://english22.s3.amazonaws.com/vacation-dialog-past-tense.mp3">Play me</audio>
+    <audio controls src="https://english22.s3.amazonaws.com/food-olivia-restaurant.mp3">Play me</audio>
     <div v-for="(question, index) in questions" :key="index">
       <p class="question-text">{{ question.text }}</p>
       <ul class="lista">

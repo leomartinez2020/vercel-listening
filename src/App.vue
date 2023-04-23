@@ -1,5 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import QuizTwo from './components/QuizTwo.vue'
 </script>
 
 <template>
@@ -7,6 +8,8 @@ import HelloWorld from './components/HelloWorld.vue'
     <h1>Listening Activity</h1>
   </div>
   <HelloWorld />
+  <hr>
+  <QuizTwo />
 </template>
 
 <style scoped>
