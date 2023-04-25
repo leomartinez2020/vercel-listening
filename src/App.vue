@@ -9,7 +9,7 @@ import QuizTwo from './components/QuizTwo.vue'
   <router-link to="/activity2">Listening 2</router-link>
   <router-view></router-view>
   <div>
-    <img alt="" src="./assets/american-flag.png" />
+    
   </div>
   
 </template>
