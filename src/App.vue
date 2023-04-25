@@ -4,12 +4,14 @@ import QuizTwo from './components/QuizTwo.vue'
 </script>
 
 <template>
+  <router-link to="/">Home</router-link> | 
+  <router-link to="/activity1">Listening 1</router-link> | 
+  <router-link to="/activity2">Listening 2</router-link>
+  <router-view></router-view>
   <div>
-    <h1>Listening Activity</h1>
+    
   </div>
-  <HelloWorld />
-  <hr>
-  <QuizTwo />
+  
 </template>
 
 <style scoped>

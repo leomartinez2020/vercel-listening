@@ -79,6 +79,12 @@ export default {
       this.correctAnswers = correctAnswers;
       this.results = true;
     },
+    resetForm() {
+      this.submitted = false;
+      this.selectedOptions = new Array(this.numberOfQuestions).fill(null);
+      this.results = false;
+      this.correctAnswers = 0;
+    },
   },
 };
 </script>
@@ -101,6 +107,7 @@ export default {
       </ul>
     </div>
     <button @click="checkAnswer" :disabled="!allQuestionsAnswered || submitted" :class="{'disabled' : !allQuestionsAnswered || submitted }">Check Answers</button>
+    <button @click="resetForm">Reset Form</button>
     <div v-if="results">
       <p class="result-message"><span>Results</span>: you got {{ correctAnswers }} out of {{ questions.length }} questions correct!</p>
     </div>
