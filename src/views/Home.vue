@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>This is the home page</h1>
+        <h1>Listening Activities</h1>
     </div>
 </template>
