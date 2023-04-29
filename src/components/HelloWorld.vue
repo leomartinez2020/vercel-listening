@@ -3,31 +3,46 @@
 export default {
   data() {
     return {
-      title: "Jessica's weekend",
+      title: "Interesting Hobbies",
       questions: [
         {
-          text: "How was Jessica's weekend?",
-          options: ["Boring", "Great", "Fantastic"],
-          answerIndex: 1,
-        },
-        {
-          text: "What did she do?",
-          options: ["She went snorkeling", "She went hiking", "She went biking"],
+          text: "What's Bill's hobby?",
+          options: ["He's into cars", "He sells cars", "He's into bikes"],
           answerIndex: 2,
         },
         {
-          text: "Who did she go with?",
-          options: ["With Gina", "With Tina", "With her boss"],
+          text: "Does Bill get money from his hobby?",
+          options: ["Yes, he does", "No, he doesn't", "He's not into making money"],
           answerIndex: 0,
         },
         {
-          text: "What did Ben do?",
-          options: ["He had a party", "He had a meeting", "He was exhausted"],
+          text: "What is Sue's hobby?",
+          options: ["Hiking", "Biking", "She's busy with work"],
           answerIndex: 0,
         },
         {
-          text: "Ben has a ________ today",
-          options: ["date", "meeting", "party"],
+          text: "How often does Sue go hiking?",
+          options: ["Quite often", "A couple of times a year", "Every weekend"],
+          answerIndex: 1,
+        },
+        {
+          text: "What is Jeff's hobby?",
+          options: ["Soccer", "Basketball", "Baseball"],
+          answerIndex: 2,
+        },
+        {
+          text: "What does he collect?",
+          options: ["Cards", "Cars", "TVs"],
+          answerIndex: 0,
+        },
+        {
+          text: "What is Lori's hobby?",
+          options: ["Editing videos", "Making movies", "Making music"],
+          answerIndex: 0,
+        },
+        {
+          text: "Is she very good at her hobby?",
+          options: ["Yes, she is", "No, she isn't", "She's an expert"],
           answerIndex: 1,
         },
       ],
@@ -77,7 +92,7 @@ export default {
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <audio controls src="https://english22.s3.amazonaws.com/vacation-dialog-past-tense.mp3">Play me</audio>
+    <audio controls src="https://english22.s3.amazonaws.com/hobbies-4-people.mp3">Play me</audio>
     <div v-for="(question, index) in questions" :key="index">
       <p class="question-text">{{ question.text }}</p>
       <ul class="lista">

@@ -3,46 +3,31 @@
 export default {
   data() {
     return {
-        title: "Olivia's restaurant",
+        title: "Mom's birthday",
         questions: [
         {
-          text: "What kind of restaurant did Olivia visit?",
-          options: ["Mexican", "Italian", "Spanish"],
+          text: "When is mom´s birthday?",
+          options: ["On the first", "On the fifth", "On the twelfth"],
+          answerIndex: 0,
+        },
+        {
+          text: "What is Alicia going to buy her?",
+          options: ["A suitcase", "A special food", "A necklace"],
           answerIndex: 2,
         },
         {
-          text: "The restaurant serves _____",
-          options: ["seafood", "pasta", "ice cream"],
-          answerIndex: 0,
+          text: "When is mom and dad's anniversary?",
+          options: ["On the 50th", "On the 12th", "On the 10th"],
+          answerIndex: 2,
         },
         {
-          text: "Olivia had ______",
-          options: ["a rice dish", "seafood soup", "fast food"],
-          answerIndex: 0,
-        },
-        {
-          text: "The restaurant doesn't serve food for vegetarians",
-          options: ["True", "False", "They don't say"],
+          text: "What are Dave and Alicia going give their parents?",
+          options: ["Cards", "Flowers", "A cake"],
           answerIndex: 1,
         },
         {
-          text: "The service was _____",
-          options: ["terrible", "fast", "slow"],
-          answerIndex: 2,
-        },
-        {
-          text: "The atmosphere was _____",
-          options: ["terrible", "relaxed", "fun"],
-          answerIndex: 2,
-        },
-        {
-          text: "The food was _____",
-          options: ["expensive", "cheap", "bad"],
-          answerIndex: 0,
-        },
-        {
-          text: "Olivia liked the restaurant",
-          options: ["true", "false", "they don't say"],
+          text: "When is Dave's birthday?",
+          options: ["On the 23th", "On the 31th", "On the 21th"],
           answerIndex: 0,
         },
       ],
@@ -92,7 +77,7 @@ export default {
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <audio controls src="https://english22.s3.amazonaws.com/food-olivia-restaurant.mp3">Play me</audio>
+    <audio controls src="https://english22.s3.amazonaws.com/celebrations-mom-birthday.mp3">Play me</audio>
     <div v-for="(question, index) in questions" :key="index">
       <p class="question-text">{{ question.text }}</p>
       <ul class="lista">

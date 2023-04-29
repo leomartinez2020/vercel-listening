@@ -3,41 +3,26 @@
 export default {
   data() {
     return {
-      title: "International Dishes",
+      title: "The fiesta",
       questions: [
         {
-          text: "Does Richard want to eat Mexican food tonight",
-          options: ["Yes, he does", "No, he doesn't", "They don't say"],
+          text: "What is a fiesta?",
+          options: ["A fair", "A festival", "A birthday party"],
           answerIndex: 1,
         },
         {
-          text: "Does he want Italian?",
-          options: ["No, he doesn't", "Italian food is bad", "He doesn't know the place"],
+          text: "Do people wear costumes for the fiesta?",
+          options: ["Yes, they do", "No, they don't", "Hardly ever"],
           answerIndex: 0,
         },
         {
-          text: "Japanese food is Richard's favorite",
-          options: ["True", "False", "They don't say"],
-          answerIndex: 1,
-        },
-        {
-          text: "Richard doesn't like spicy food",
-          options: ["True", "False", "They don't say"],
-          answerIndex: 0,
-        },
-        {
-          text: "Karen loves Brazilian and Indian food",
-          options: ["True", "False", "They don't say"],
-          answerIndex: 0,
-        },
-        {
-          text: "Can you eat all you want at the Chinese restaurant?",
-          options: ["No. At the Thai restaurant", "No, you can't", "Yes, you can"],
+          text: "Does Tina like parades?",
+          options: ["She's big on festivals", "Yes, she does", "Not really"],
           answerIndex: 2,
         },
         {
-          text: "Richard is a picky eater",
-          options: ["True", "False", "They don't say"],
+          text: "What else can you find at the fiesta?",
+          options: ["Food", "All kinds of music", "Crafts"],
           answerIndex: 0,
         },
       ],
@@ -87,7 +72,7 @@ export default {
 <template>
   <div>
     <h2>{{ title }}</h2>
-    <audio controls src="https://english22.s3.amazonaws.com/international-dishes.mp3">Play me</audio>
+    <audio controls src="https://english22.s3.amazonaws.com/celebrations-fiesta.mp3">Play me</audio>
     <div v-for="(question, index) in questions" :key="index">
       <p class="question-text">{{ question.text }}</p>
       <ul class="lista">
